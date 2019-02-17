@@ -2,6 +2,8 @@
 
 'use strict';
 
+const levenshtein = require('fast-levenshtein');
+
 const argv = require('yargs')
     .usage('$0 [args]', 'Generate a React Native changelog from the commits and PRs')
     .options({
@@ -57,6 +59,32 @@ function filterCICommits(commits) {
     const text = item.commit.message.toLowerCase();
     return !(text.includes('travis') || text.includes('circleci') || text.includes('circle ci') || text.includes('bump version numbers'));
   });
+}
+function filterRevertCommits(commits) {
+  let revertCommits = [];
+  const revertCommitIndicators = ['revert "', 'back out "'];
+  const filteredCommits = commits.filter(item => {
+    let text = item.commit.message.split('\n')[0].toLowerCase();
+    if(revertCommitIndicators.some(indicator => text.includes(indicator))) {
+      revertCommitIndicators.forEach(indicator => {
+        text = text.replace(indicator, "");
+      });
+      revertCommits.push(text);
+      return false;
+    }
+    return true;
+  }).filter(item => {
+    let text = item.commit.message.split('\n')[0].toLowerCase();
+    revertCommits.forEach(revertCommit => {
+      if(levenshtein.get(text, revertCommit) < 0.5 * revertCommit.length) {
+        revertCommits = revertCommits.filter(function(e) { return e !== revertCommit });
+        return false;
+      }
+    });
+    return true;
+  });
+  if(revertCommits.length > 0) console.warn("Was unable to find the mate for the following revert commits: " + revertCommits + "; you will need to manually remove this from below.");
+  return filteredCommits;
 }
 
 function isAndroidCommit(change) {
@@ -266,6 +294,7 @@ ${data.unknown.ios.join('\n')}
 fetchJSON('api.github.com', '/repos/facebook/react-native/compare/' + base + '...' + compare)
   .then(data => data.commits)
   .then(filterCICommits)
+  .then(filterRevertCommits)
   .then(getChangelogDesc)
   .then(buildMarkDown)
   .then(data => console.log(data))
