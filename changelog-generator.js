@@ -96,7 +96,7 @@ function isIOSCommit(change) {
 }
 
 function isAdded(change) {
-  return /\b(add|adds|added)\b/i.test(change);
+  return /\b(add|adds|added|enhancement)\b/i.test(change);
 }
 
 function isChanged(change) {
@@ -120,7 +120,10 @@ function isSecurity(change) {
   }
 
 function getChangeMessage(item) {
-  return `- ${item.commit.message.split('\n')[0]} ([${item.sha.slice(0, 7)}](https://github.com/facebook/react-native/commit/${item.sha.slice(0, 7)})${item.author ? ' by [@' + item.author.login + '](https://github.com/' + item.author.login + ')' : ''})`;
+  const commitMessage = item.commit.message.split('\n');
+  const entry = commitMessage.find(a => /\[ios\]|\[android\]|\[general\]/i.test(a)) || commitMessage[0];
+  const authorSection = `([${item.sha.slice(0, 7)}](https://github.com/facebook/react-native/commit/${item.sha.slice(0, 7)})${item.author ? ' by [@' + item.author.login + '](https://github.com/' + item.author.login + ')' : ''})`;
+  return `- ${entry} ${authorSection}`;
 }
 
 function getChangelogDesc(commits) {
@@ -135,7 +138,7 @@ function getChangelogDesc(commits) {
   };
 
   commits.forEach(item => {
-    const change = item.commit.message.split('\n')[0];
+    const change = item.commit.message;
     const message = getChangeMessage(item);
 
     if (isAdded(change)) {
