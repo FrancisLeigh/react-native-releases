@@ -28,7 +28,7 @@
 
 #### Android specific
 
-- Android: Add a maxFontSizeMultiplier prop to <Text> and <TextInput> (#23069) ([4936d28](https://github.com/facebook/react-native/commit/4936d28) by [@rigdern](https://github.com/rigdern))
+- Android: Add a maxFontSizeMultiplier prop to `<Text>` and `<TextInput>` (#23069) ([4936d28](https://github.com/facebook/react-native/commit/4936d28) by [@rigdern](https://github.com/rigdern))
 - Android: Add error description to Image onError callback (#22737) ([7795a67](https://github.com/facebook/react-native/commit/7795a67) by [@Jyrno42](https://github.com/Jyrno42))
 - Added: informational error message on getting Android drawable folder… (#17751) ([a159a33](https://github.com/facebook/react-native/commit/a159a33) by [@BrunoVillanova](https://github.com/BrunoVillanova))
 - Add ability to control scroll animation duration for Android (#22884) ([7e8b810](https://github.com/facebook/react-native/commit/7e8b810) by [@osdnk](https://github.com/osdnk))
@@ -51,11 +51,7 @@
 
 #### Android specific
 
-
-
 #### iOS specific
-
-
 
 ### Deprecated
 
@@ -63,11 +59,7 @@
 
 #### Android specific
 
-
-
 #### iOS specific
-
-
 
 ### Removed
 
@@ -99,7 +91,7 @@
 ### Fixed
 
 - Fix SwipeableActionButton styling. (#23113) ([ad52f52](https://github.com/facebook/react-native/commit/ad52f52) by [@varungupta85](https://github.com/varungupta85))
-- Fixed string ref which was causing alert on react <Strictmode> (#23146) ([e4d7fc0](https://github.com/facebook/react-native/commit/e4d7fc0) by [@rsmelo92](https://github.com/rsmelo92))
+- Fixed string ref which was causing alert on react `<Strictmode>` (#23146) ([e4d7fc0](https://github.com/facebook/react-native/commit/e4d7fc0) by [@rsmelo92](https://github.com/rsmelo92))
 - fix: change template to work with jest (#23150) ([5218932](https://github.com/facebook/react-native/commit/5218932) by [@Esemesek](https://github.com/Esemesek))
 - Fix small typo in comments of reactDecodedImageBytes (#23165) ([dd8f5de](https://github.com/facebook/react-native/commit/dd8f5de) by [@zhongwuzw](https://github.com/zhongwuzw))
 - Fix issue #21065 getInspectorDataForViewTag is not a function (#21237) ([46f3285](https://github.com/facebook/react-native/commit/46f3285) by [@TranLuongTuanAnh](https://github.com/TranLuongTuanAnh))
@@ -108,7 +100,7 @@
 - Fix portability issues to Linux, FreeBSD, and older libc++ ([36916ee](https://github.com/facebook/react-native/commit/36916ee) by [@matthargett](https://github.com/matthargett))
 - Fixes alert view block first responder (#23240) ([e4364fa](https://github.com/facebook/react-native/commit/e4364fa) by [@zhongwuzw](https://github.com/zhongwuzw))
 - apply Network Security Config file (fixes #22375) (part 2 of #23105) (#23135) ([84572c4](https://github.com/facebook/react-native/commit/84572c4) by [@Salakar](https://github.com/Salakar))
-- Fix for Image displayName, currently displaying as <Component> in tests (#23287) ([4989123](https://github.com/facebook/react-native/commit/4989123) by [@linnett](https://github.com/linnett))
+- Fix for Image displayName, currently displaying as `<Component>` in tests (#23287) ([4989123](https://github.com/facebook/react-native/commit/4989123) by [@linnett](https://github.com/linnett))
 - Fix broken jsiexecutor search path. (#23274) ([2aa2401](https://github.com/facebook/react-native/commit/2aa2401) by [@amccarri](https://github.com/amccarri))
 - Fix duplicate symbols linker error in xcodeproj (#23284) ([9f72e6a](https://github.com/facebook/react-native/commit/9f72e6a) by [@tyrone-sudeium](https://github.com/tyrone-sudeium))
 - Fix typo of startSurface comments (#23264) ([cca1cdf](https://github.com/facebook/react-native/commit/cca1cdf) by [@zhongwuzw](https://github.com/zhongwuzw))
@@ -139,15 +131,11 @@
 
 ### Security
 
-
-
 #### Android specific
 
 - improve Android Network Security config (#23429) ([724d83a](https://github.com/facebook/react-native/commit/724d83a) by [@dulmandakh](https://github.com/dulmandakh))
 
 #### iOS specific
-
-
 
 ### Unknown
 
@@ -274,7 +262,7 @@
 
 - Upgrade Android support library to version 28 in RN ([fe6f6cd](https://github.com/facebook/react-native/commit/fe6f6cd) by [@mdvacca](https://github.com/mdvacca))
 - android support library 28.0.0 (#23109) ([5bbed43](https://github.com/facebook/react-native/commit/5bbed43) by [@dulmandakh](https://github.com/dulmandakh))
-- Temporary render <View> for <AndroidTextInput> component ([5bc709d](https://github.com/facebook/react-native/commit/5bc709d) by [@mdvacca](https://github.com/mdvacca))
+- Temporary render `<View>` for `<AndroidTextInput>` component ([5bc709d](https://github.com/facebook/react-native/commit/5bc709d) by [@mdvacca](https://github.com/mdvacca))
 - Expose initialAppState constant from Android native AppState module (#19935) ([5c0dcdd](https://github.com/facebook/react-native/commit/5c0dcdd))
 - Flow strict-local in TimePickerAndroid.android.ios.js (#22714) ([2ed1bb2](https://github.com/facebook/react-native/commit/2ed1bb2) by [@yushimatenjin](https://github.com/yushimatenjin))
 - - create missing AndroidDrawable flow types in ViewPropTypes.js. (#23192) ([7ff9456](https://github.com/facebook/react-native/commit/7ff9456) by [@danibonilha](https://github.com/danibonilha))
