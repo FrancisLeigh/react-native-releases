@@ -39,12 +39,7 @@
 - Fix textTransform when used with other text styles on Android (#22670) ([3a33e75](https://github.com/facebook/react-native/commit/3a33e75) by [@janicduplessis](https://github.com/janicduplessis))
 - [ANDROID] [BREAKING] [Networking] - removed replaceOkHttpClient method in OkHttpClientProvider. ([7cbdd7b](https://github.com/facebook/react-native/commit/7cbdd7b) by [@cdlewis](https://github.com/cdlewis))
 - [ANDROID][ENHANCEMENT] - Can show videos and photos from CameraRoll in the same time ([54534e7](https://github.com/facebook/react-native/commit/54534e7) by [@kesha-antonov](https://github.com/kesha-antonov))
--  [IOS] [BREAKING] [FlatList] - Change a thing that breaks other things ([a159a33](https://github.com/facebook/react-native/commit/a159a33) by [@BrunoVillanova](https://github.com/BrunoVillanova))
 - [GENERAL] [ENHANCEMENT] [ViewPropTypes.js] - Enhance Flow types definitions ([7ff9456](https://github.com/facebook/react-native/commit/7ff9456) by [@danibonilha](https://github.com/danibonilha))
--  [IOS] [BREAKING] [FlatList] - Change a thing that breaks other things ([8afa037](https://github.com/facebook/react-native/commit/8afa037) by [@rogerkerse](https://github.com/rogerkerse))
-- Add ability to control scroll animation duration for Android (#22884) ([7e8b810](https://github.com/facebook/react-native/commit/7e8b810) by [@osdnk](https://github.com/osdnk))
--  [IOS] [BREAKING] [FlatList] - Change a thing that breaks other things ([7b8235a](https://github.com/facebook/react-native/commit/7b8235a) by [@ejmartin504](https://github.com/ejmartin504))
-- Revert D13860038: [react-native][PR] Add ability to control scroll animation duration for Android ([4c69ccd](https://github.com/facebook/react-native/commit/4c69ccd) by [@fkgozali](https://github.com/fkgozali))
 - [Android] [Fixed] - Fixes Android crash on animated style with string rotation ([e405e84](https://github.com/facebook/react-native/commit/e405e84) by [@scisci](https://github.com/scisci))
 - [Android] [Changed] - Bump Soloader to 0.6.0 ([07d1075](https://github.com/facebook/react-native/commit/07d1075) by [@dulmandakh](https://github.com/dulmandakh))
 - [ANDROID] [Template] add Network Security Config file to allow access to packager via cleartext requests in Android API 28 and above. (fixes #22375) ([84572c4](https://github.com/facebook/react-native/commit/84572c4) by [@Salakar](https://github.com/Salakar))
@@ -54,9 +49,7 @@
 - [Android] [Changed] - add back buildToolsVersion to template ([cf52ab5](https://github.com/facebook/react-native/commit/cf52ab5) by [@dulmandakh](https://github.com/dulmandakh))
 - [Android] [Changed] - Add nullable annotations to ReadableMap, WritableMap, ReadableArray, Writable. ([b640b6f](https://github.com/facebook/react-native/commit/b640b6f) by [@dulmandakh](https://github.com/dulmandakh))
 - [Android] [Changed] - Nonnull annotations for native module interfaces ([c93cbdf](https://github.com/facebook/react-native/commit/c93cbdf) by [@dulmandakh](https://github.com/dulmandakh))
-- * [General][added] - A deprecation notice with info about third-party solutions for getting a base64-encoded string. ([62599fa](https://github.com/facebook/react-native/commit/62599fa) by [@EvanBacon](https://github.com/EvanBacon))
 - Disable OverlappingRendering for ReactTextView ([f83281e](https://github.com/facebook/react-native/commit/f83281e) by [@mdvacca](https://github.com/mdvacca))
-- [General] [Deprecated] - Deprecated [ViewPagerAndroid](https://facebook.github.io/react-native/docs/viewpagerandroid) as it has now been moved to [react-native-community/viewpager](https://github.com/react-native-community/react-native-viewpager) ([77300ca](https://github.com/facebook/react-native/commit/77300ca) by [@ferrannp](https://github.com/ferrannp))
 - [Android] [Changed] - fix nullable annotations in WritableArray, WritableMap ([7b33d6b](https://github.com/facebook/react-native/commit/7b33d6b) by [@dulmandakh](https://github.com/dulmandakh))
 - [Android] [Changed] - Add Nonnull annotations to ReactPackage ([e6d8ac8](https://github.com/facebook/react-native/commit/e6d8ac8) by [@dulmandakh](https://github.com/dulmandakh))
 - Add autoComplete prop (#21575) ([179d490](https://github.com/facebook/react-native/commit/179d490))
@@ -72,7 +65,6 @@
 - [iOS][Added] - Expose isLocalUserInfoKey to keyboard event notifications ([05f35c2](https://github.com/facebook/react-native/commit/05f35c2) by [@nossbigg](https://github.com/nossbigg))
 - [ios] [added] - Allow changing the project path in react-native-xcode.sh ([9ccde37](https://github.com/facebook/react-native/commit/9ccde37) by [@janicduplessis](https://github.com/janicduplessis))
 - TM iOS: added helper to check whether a class is TurboModule compatible ([d9f34bd](https://github.com/facebook/react-native/commit/d9f34bd) by [@fkgozali](https://github.com/fkgozali))
-- [General] [Deprecated] - Deprecated [MaskedViewIOS](https://facebook.github.io/react-native/docs/maskedviewios) as it has now been moved to [react-native-community/masked-view](https://github.com/react-native-community/react-native-masked-view) ([4ac65f5](https://github.com/facebook/react-native/commit/4ac65f5) by [@FonDorn](https://github.com/FonDorn))
 - [iOS] [Fixed] - Added `DoubleConversion` and `glog` to `cxxreact`, `jsi` and `jsiexecutor` subspecs in `React.podspec` file. ([11c12d5](https://github.com/facebook/react-native/commit/11c12d5) by [@alexruperez](https://github.com/alexruperez))
 - [iOS] [Fixed] - Fixed a "'folly/folly-config.h' file not found" build error when using React via CocoaPods ([415cc25](https://github.com/facebook/react-native/commit/415cc25) by [@Salakar](https://github.com/Salakar))
 
@@ -88,6 +80,7 @@
 - [General] [Changed] - Split RTLExample into separate exported examples ([43b56ec](https://github.com/facebook/react-native/commit/43b56ec) by [@CodingItWrong](https://github.com/CodingItWrong))
 - [GENERAL] [Changed] - React sync for revisions aa94237...f24a0da ([2af13b4](https://github.com/facebook/react-native/commit/2af13b4) by [@hramos](https://github.com/hramos))
 - [General] [Fixed] - Tweaked `jsi.h` to build on MSVC ([78be6ef](https://github.com/facebook/react-native/commit/78be6ef) by [@empyrical](https://github.com/empyrical))
+
 #### Android specific
 
 - [Android] [Changed] - Bump Android Support Library to 28.0.0. ([5bbed43](https://github.com/facebook/react-native/commit/5bbed43) by [@dulmandakh](https://github.com/dulmandakh))
@@ -116,12 +109,16 @@
 - [iOS] [Changed] - Moved iOS build cache directory from ~/.rncache to ~/Library/Caches/com.facebook.ReactNativeBuild ([1024dc2](https://github.com/facebook/react-native/commit/1024dc2) by [@sryze](https://github.com/sryze))
 - [IOS][Changed] - Fix warning in RCTImage ([5a87093](https://github.com/facebook/react-native/commit/5a87093) by [@rafaellincoln](https://github.com/rafaellincoln))
 - [IOS][Changed] - Fix warning in JSCRuntime ([ac90c4f](https://github.com/facebook/react-native/commit/ac90c4f) by [@rafaellincoln](https://github.com/rafaellincoln))
-- [IOS] [BUGFIX] [AsyncStorage] - Correctly remove keys of large values from AsyncStorage. ([27b4d21](https://github.com/facebook/react-native/commit/27b4d21) by [@esprehn](https://github.com/esprehn))
 - [iOS] [Changed] - Refine Keyboard API Event typings ([7ee13cc](https://github.com/facebook/react-native/commit/7ee13cc) by [@nossbigg](https://github.com/nossbigg))
+- [IOS] [BREAKING] [FlatList] - Change a thing that breaks other things ([a159a33](https://github.com/facebook/react-native/commit/a159a33) by [@BrunoVillanova](https://github.com/BrunoVillanova))
+- [IOS] [BREAKING] [FlatList] - Change a thing that breaks other things ([8afa037](https://github.com/facebook/react-native/commit/8afa037) by [@rogerkerse](https://github.com/rogerkerse))
+- [IOS] [BREAKING] [FlatList] - Change a thing that breaks other things ([7b8235a](https://github.com/facebook/react-native/commit/7b8235a) by [@ejmartin504](https://github.com/ejmartin504))
 
 ### Deprecated
 
-
+- [General] [Deprecated] - Deprecated [MaskedViewIOS](https://facebook.github.io/react-native/docs/maskedviewios) as it has now been moved to [react-native-community/masked-view](https://github.com/react-native-community/react-native-masked-view) ([4ac65f5](https://github.com/facebook/react-native/commit/4ac65f5) by [@FonDorn](https://github.com/FonDorn))
+- [General] [Deprecated] - Deprecated [ViewPagerAndroid](https://facebook.github.io/react-native/docs/viewpagerandroid) as it has now been moved to [react-native-community/viewpager](https://github.com/react-native-community/react-native-viewpager) ([77300ca](https://github.com/facebook/react-native/commit/77300ca) by [@ferrannp](https://github.com/ferrannp))
+- [General][Deprecated] - A deprecation notice with info about third-party solutions for getting a base64-encoded string. ([62599fa](https://github.com/facebook/react-native/commit/62599fa) by [@EvanBacon](https://github.com/EvanBacon))
 
 #### Android specific
 
@@ -175,6 +172,7 @@
 
 #### iOS specific
 
+- [IOS] [BUGFIX] [AsyncStorage] - Correctly remove keys of large values from AsyncStorage. ([27b4d21](https://github.com/facebook/react-native/commit/27b4d21) by [@esprehn](https://github.com/esprehn))
 - [iOS] [Fixed] - Fix SectionList layout of RNTester on iOS ([25f7b0e](https://github.com/facebook/react-native/commit/25f7b0e) by [@zhongwuzw](https://github.com/zhongwuzw))
 - [iOS] [Fixed] - Fix small typo in comments of reactDecodedImageBytes ([dd8f5de](https://github.com/facebook/react-native/commit/dd8f5de) by [@zhongwuzw](https://github.com/zhongwuzw))
 - [iOS][fixed] Fixed overscroll behavior on iOS virtualized lists (Fixes #18098) ([4d5f85e](https://github.com/facebook/react-native/commit/4d5f85e))
@@ -200,7 +198,6 @@
 
 ### Unknown
 
--  [GENERAL] [INTERNAL] [CI] - migrate ci to official docker ([9351dd6](https://github.com/facebook/react-native/commit/9351dd6) by [@gengjiawen](https://github.com/gengjiawen))
 - Delete functionality for shared childen ([f4def00](https://github.com/facebook/react-native/commit/f4def00) by [@davidaurelio](https://github.com/davidaurelio))
 - Globally disable LayoutAnimation during Snapshot Tests ([527fc9d](https://github.com/facebook/react-native/commit/527fc9d) by [@PeteTheHeat](https://github.com/PeteTheHeat))
 - Critical improvements for Map and Set polyfills. ([90850ca](https://github.com/facebook/react-native/commit/90850ca) by [@benjamn](https://github.com/benjamn))
@@ -243,7 +240,6 @@
 
 - update xcode version to 2.0.0 (#23051) ([988366a](https://github.com/facebook/react-native/commit/988366a) by [@ewamal](https://github.com/ewamal))
 - Feature/action sheet destructive button indexes (#18254) ([67e7f16](https://github.com/facebook/react-native/commit/67e7f16) by [@sdg9](https://github.com/sdg9))
-- Revert D13895627: [react-native][PR] [iOS] Enhance image freshness check before stored into cache ([c435ff3](https://github.com/facebook/react-native/commit/c435ff3))
 - Enable module lookup in TurboModules ([0ceefb4](https://github.com/facebook/react-native/commit/0ceefb4) by [@RSNara](https://github.com/RSNara))
 - TM iOS: guard against nullptr in module lookup ([8ae1852](https://github.com/facebook/react-native/commit/8ae1852) by [@fkgozali](https://github.com/fkgozali))
 - TM iOS: Util to check if an id is TurboModule instance ([3e9f9cf](https://github.com/facebook/react-native/commit/3e9f9cf) by [@fkgozali](https://github.com/fkgozali))
