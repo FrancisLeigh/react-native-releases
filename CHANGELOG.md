@@ -28,7 +28,6 @@
 - [General] [Deprecated] - Deprecated NetInfo as it has now been moved to react-native-community/netinfo ([d9c0dfe](https://github.com/facebook/react-native/commit/d9c0dfe) by [@matt-oakes](https://github.com/matt-oakes))
 - Add a Metro configuration with inline require/import ([ae11993](https://github.com/facebook/react-native/commit/ae11993) by [@cpojer](https://github.com/cpojer))
 - Add more init perf markers ([864a301](https://github.com/facebook/react-native/commit/864a301) by [@sahrens](https://github.com/sahrens))
-- Support MobileConfig in Fabric Core C++ in FB4A and Catalyst ([a15e723](https://github.com/facebook/react-native/commit/a15e723) by [@JoshuaGross](https://github.com/JoshuaGross))
 - Add Platform module for web target (#23387) ([daa79b0](https://github.com/facebook/react-native/commit/daa79b0) by [@EvanBacon](https://github.com/EvanBacon))
 
 #### Android specific
@@ -49,8 +48,6 @@
 - [Android] [Fixed] - Fixes Android crash on animated style with string rotation ([e405e84](https://github.com/facebook/react-native/commit/e405e84) by [@scisci](https://github.com/scisci))
 - [Android] [Changed] - Bump Soloader to 0.6.0 ([07d1075](https://github.com/facebook/react-native/commit/07d1075) by [@dulmandakh](https://github.com/dulmandakh))
 - [ANDROID] [Template] add Network Security Config file to allow access to packager via cleartext requests in Android API 28 and above. (fixes #22375) ([84572c4](https://github.com/facebook/react-native/commit/84572c4) by [@Salakar](https://github.com/Salakar))
-- Use feature flags in Fabric C++ core, in particular for paragraph measurement caching ([28b8b8e](https://github.com/facebook/react-native/commit/28b8b8e) by [@JoshuaGross](https://github.com/JoshuaGross))
-- Add performance counters for Fabric ([7f27888](https://github.com/facebook/react-native/commit/7f27888) by [@mdvacca](https://github.com/mdvacca))
 - Add support for intent:// URIs ([52bdf34](https://github.com/facebook/react-native/commit/52bdf34))
 - [Android] [Changed] - Enable Java 8 ([38eb2a7](https://github.com/facebook/react-native/commit/38eb2a7) by [@dulmandakh](https://github.com/dulmandakh))
 - [Android] [Changed] - Suppress missing permission warnings ([d53dbb0](https://github.com/facebook/react-native/commit/d53dbb0) by [@dulmandakh](https://github.com/dulmandakh))
@@ -66,7 +63,6 @@
 
 #### iOS specific
 
-- Fabric: Add Fabric-compatible Slider component to iOS (ObjC code) ([62395d0](https://github.com/facebook/react-native/commit/62395d0) by [@JoshuaGross](https://github.com/JoshuaGross))
 - [iOS][Changed] - added types to RCTSnapshotNativeComponent.js, as mentioned in #22990 ([67ad72f](https://github.com/facebook/react-native/commit/67ad72f) by [@Naturalclar](https://github.com/Naturalclar))
 - [iOS][Fixed] - Add CF_RETURNS_NOT_RETAINED annotate for Objective-C method which returns Core Foundation object ([9672c2e](https://github.com/facebook/react-native/commit/9672c2e) by [@zhongwuzw](https://github.com/zhongwuzw))
 - [iOS] [Fixed] - Fixes image decoded bytes calculation ([103880b](https://github.com/facebook/react-native/commit/103880b) by [@zhongwuzw](https://github.com/zhongwuzw))
@@ -92,8 +88,6 @@
 - [General] [Changed] - Split RTLExample into separate exported examples ([43b56ec](https://github.com/facebook/react-native/commit/43b56ec) by [@CodingItWrong](https://github.com/CodingItWrong))
 - [GENERAL] [Changed] - React sync for revisions aa94237...f24a0da ([2af13b4](https://github.com/facebook/react-native/commit/2af13b4) by [@hramos](https://github.com/hramos))
 - [General] [Fixed] - Tweaked `jsi.h` to build on MSVC ([78be6ef](https://github.com/facebook/react-native/commit/78be6ef) by [@empyrical](https://github.com/empyrical))
-- Fabric: Systraces are back ([77838b5](https://github.com/facebook/react-native/commit/77838b5) by [@shergin](https://github.com/shergin))
-
 #### Android specific
 
 - [Android] [Changed] - Bump Android Support Library to 28.0.0. ([5bbed43](https://github.com/facebook/react-native/commit/5bbed43) by [@dulmandakh](https://github.com/dulmandakh))
@@ -106,7 +100,6 @@
 - [Android] [Changed] - remove redundant targetApi and version checks ([a4840e7](https://github.com/facebook/react-native/commit/a4840e7) by [@dulmandakh](https://github.com/dulmandakh))
 - [Android] [Changed] - ReactSlider extends AppCompatSeekBar ([833429d](https://github.com/facebook/react-native/commit/833429d) by [@dulmandakh](https://github.com/dulmandakh))
 - [Android] [Changed] - ReactPicker extends AppCompatSpinner ([adc1410](https://github.com/facebook/react-native/commit/adc1410) by [@dulmandakh](https://github.com/dulmandakh))
-- Fabric: A bunch of `#ifdef ANDROID` ([2332cb6](https://github.com/facebook/react-native/commit/2332cb6) by [@shergin](https://github.com/shergin))
 - [Android] [Changed] - Prepare Gradle scripts for Kotlin DSL migration ([8ccc55f](https://github.com/facebook/react-native/commit/8ccc55f) by [@dulmandakh](https://github.com/dulmandakh))
 - [Android] [Changed] - fix lint error/warnings ([d2fc19f](https://github.com/facebook/react-native/commit/d2fc19f) by [@dulmandakh](https://github.com/dulmandakh))
 - [Android] [Changed] - TimePickerDialogModule supports only FragmentActivity ([be361d0](https://github.com/facebook/react-native/commit/be361d0) by [@dulmandakh](https://github.com/dulmandakh))
@@ -142,13 +135,10 @@
 
 - Remove UIProp class from redex and proguard rules, it doesn't exist ([cf0c37b](https://github.com/facebook/react-native/commit/cf0c37b) by [@dulinriley](https://github.com/dulinriley))
 - Remove components out of Bindings ([2b35659](https://github.com/facebook/react-native/commit/2b35659) by [@mdvacca](https://github.com/mdvacca))
-- Remove ReactInstanceManager out of FabricJSIModuleProvider ([0bf6a8e](https://github.com/facebook/react-native/commit/0bf6a8e) by [@mdvacca](https://github.com/mdvacca))
 - Remove unused constexpr ([52d9f26](https://github.com/facebook/react-native/commit/52d9f26) by [@davidaurelio](https://github.com/davidaurelio))
 - [GENERAL] [BUGFIX] [KeyboardAvoidingView] - Correct height behaviour when keyboard closed ([745484c](https://github.com/facebook/react-native/commit/745484c) by [@shauns](https://github.com/shauns))
-- Temporary remove systraces from Fabric core code ([842b9c1](https://github.com/facebook/react-native/commit/842b9c1) by [@mdvacca](https://github.com/mdvacca))
 - Remove AnimatedImplementation spread from AnimatedMock ([7f646a5](https://github.com/facebook/react-native/commit/7f646a5) by [@PeteTheHeat](https://github.com/PeteTheHeat))
 - Remove unused code in ReactTextView ([48ba440](https://github.com/facebook/react-native/commit/48ba440) by [@mdvacca](https://github.com/mdvacca))
-- Enable support for using new MobileConfigNativeModule in RN Core/Fabric C++ ([2c09c06](https://github.com/facebook/react-native/commit/2c09c06) by [@JoshuaGross](https://github.com/JoshuaGross))
 
 #### Android specific
 
@@ -213,13 +203,11 @@
 -  [GENERAL] [INTERNAL] [CI] - migrate ci to official docker ([9351dd6](https://github.com/facebook/react-native/commit/9351dd6) by [@gengjiawen](https://github.com/gengjiawen))
 - Delete functionality for shared childen ([f4def00](https://github.com/facebook/react-native/commit/f4def00) by [@davidaurelio](https://github.com/davidaurelio))
 - Globally disable LayoutAnimation during Snapshot Tests ([527fc9d](https://github.com/facebook/react-native/commit/527fc9d) by [@PeteTheHeat](https://github.com/PeteTheHeat))
-- Fabric: Replace ImageLoader promise implementation with observer model ([b905548](https://github.com/facebook/react-native/commit/b905548) by [@JoshuaGross](https://github.com/JoshuaGross))
 - Critical improvements for Map and Set polyfills. ([90850ca](https://github.com/facebook/react-native/commit/90850ca) by [@benjamn](https://github.com/benjamn))
 - Make the load-script-error less misleading (#17055) ([46aaa02](https://github.com/facebook/react-native/commit/46aaa02) by [@sunnylqm](https://github.com/sunnylqm))
 - Update hash functions to use folly::hash::hash_combine ([88bc80c](https://github.com/facebook/react-native/commit/88bc80c) by [@JoshuaGross](https://github.com/JoshuaGross))
 - Rename `YGMarkerType` to `YGMarker` ([e804124](https://github.com/facebook/react-native/commit/e804124) by [@davidaurelio](https://github.com/davidaurelio))
 - Pass layout marker data along ([fc6a4b6](https://github.com/facebook/react-native/commit/fc6a4b6) by [@davidaurelio](https://github.com/davidaurelio))
-- Include PreAllocateViewMountItem into the eager initialization of Fabric classes ([6feb3dc](https://github.com/facebook/react-native/commit/6feb3dc) by [@mdvacca](https://github.com/mdvacca))
 - avoid double lookup of a nativemodule when resolving turbomodule ([1e6f534](https://github.com/facebook/react-native/commit/1e6f534) by [@fkgozali](https://github.com/fkgozali))
 - Address some paragraph measure cache follow-up nits ([10e4a85](https://github.com/facebook/react-native/commit/10e4a85) by [@JoshuaGross](https://github.com/JoshuaGross))
 - Marker for measure callbacks ([d2b2316](https://github.com/facebook/react-native/commit/d2b2316) by [@davidaurelio](https://github.com/davidaurelio))
@@ -234,32 +222,22 @@
 - Move CoreModulesPackage to use TurboReactPackage ([aa3fc09](https://github.com/facebook/react-native/commit/aa3fc09) by [@axe-fb](https://github.com/axe-fb))
 - Initialize internals of ReadableNativeMap with the correct initial capacity ([185320d](https://github.com/facebook/react-native/commit/185320d) by [@mdvacca](https://github.com/mdvacca))
 - ImageResponseObserverCoordinator does not need to be shared_ptr ([550a14c](https://github.com/facebook/react-native/commit/550a14c) by [@JoshuaGross](https://github.com/JoshuaGross))
-- Fabric: Lost comment in EventQueue ([b0c8275](https://github.com/facebook/react-native/commit/b0c8275) by [@shergin](https://github.com/shergin))
-- Fabric: folly::dynamic was replaced with RawValue in prop-parsing infra ([9842e39](https://github.com/facebook/react-native/commit/9842e39) by [@shergin](https://github.com/shergin))
 - Move codegen into packages/react-native-codegen ([5ed749e](https://github.com/facebook/react-native/commit/5ed749e) by [@cpojer](https://github.com/cpojer))
 - Move `.clang-format` to repo root (#23328) ([5319cb2](https://github.com/facebook/react-native/commit/5319cb2) by [@davidaurelio](https://github.com/davidaurelio))
 - Kill react-native-git-upgrade ([a6bdacb](https://github.com/facebook/react-native/commit/a6bdacb) by [@cpojer](https://github.com/cpojer))
 - Consider SSTs in Platform.isTesting ([0bde29e](https://github.com/facebook/react-native/commit/0bde29e) by [@PeteTheHeat](https://github.com/PeteTheHeat))
-- Enforce rules-of-hooks via eslint ([7ecf55f](https://github.com/facebook/react-native/commit/7ecf55f) by [@cpojer](https://github.com/cpojer))
-- Fabric: Introducing Better: For faster, clear and ideomatic codebase ([fd3b8f2](https://github.com/facebook/react-native/commit/fd3b8f2) by [@shergin](https://github.com/shergin))
-- Trivial rename ([6a71d51](https://github.com/facebook/react-native/commit/6a71d51) by [@mdvacca](https://github.com/mdvacca))
-- Fabric: Stop preallocation views on the main thread ([bf58ba9](https://github.com/facebook/react-native/commit/bf58ba9) by [@shergin](https://github.com/shergin))
-- Clang-format for all files in Fabric folder ([1a26f97](https://github.com/facebook/react-native/commit/1a26f97) by [@shergin](https://github.com/shergin))
 - Make REACT_CLASS public so we can use a provider ([b8246ac](https://github.com/facebook/react-native/commit/b8246ac) by [@ejanzer](https://github.com/ejanzer))
 - Stop preallocation views on the main thread ([17e1694](https://github.com/facebook/react-native/commit/17e1694) by [@mdvacca](https://github.com/mdvacca))
 - Update script to parse all specs in folder ([34763bf](https://github.com/facebook/react-native/commit/34763bf) by [@rickhanlonii](https://github.com/rickhanlonii))
 - Exclude RN templates from internal linters ([aefb059](https://github.com/facebook/react-native/commit/aefb059) by [@zertosh](https://github.com/zertosh))
-- Fabric: Systraces are temporary disabled in Fabric C++ code ([222e650](https://github.com/facebook/react-native/commit/222e650) by [@shergin](https://github.com/shergin))
 - Bring back the unit tests for the Cxx implementation ([3c74b6e](https://github.com/facebook/react-native/commit/3c74b6e) by [@fromcelticpark](https://github.com/fromcelticpark))
 - Bump CLI dependency ([a252aee](https://github.com/facebook/react-native/commit/a252aee) and [5e1504b](https://github.com/facebook/react-native/commit/5e1504b) by [@grabbou](https://github.com/grabbou))
 
 #### Android Unknown
 
 - Temporary render <View> for <AndroidTextInput> component ([5bc709d](https://github.com/facebook/react-native/commit/5bc709d) by [@mdvacca](https://github.com/mdvacca))
-- Fabric: Use LRU to cache results of ParagraphShadowNode::measure ([a904944](https://github.com/facebook/react-native/commit/a904944) by [@JoshuaGross](https://github.com/JoshuaGross))
 - Make perspective transformation look exactly same on iOS and Android (#18302) ([4c10f93](https://github.com/facebook/react-native/commit/4c10f93) by [@syaau](https://github.com/syaau))
 - iOS: Make each module implement getTurboModuleWithJsInvoker: instead of having centralized provider ([8a50bc3](https://github.com/facebook/react-native/commit/8a50bc3) by [@fkgozali](https://github.com/fkgozali))
-- Fabric: Enable all Fabric tests for Android ([21290b5](https://github.com/facebook/react-native/commit/21290b5) by [@shergin](https://github.com/shergin))
 
 #### iOS Unknown
 
@@ -268,7 +246,6 @@
 - Revert D13895627: [react-native][PR] [iOS] Enhance image freshness check before stored into cache ([c435ff3](https://github.com/facebook/react-native/commit/c435ff3))
 - Enable module lookup in TurboModules ([0ceefb4](https://github.com/facebook/react-native/commit/0ceefb4) by [@RSNara](https://github.com/RSNara))
 - TM iOS: guard against nullptr in module lookup ([8ae1852](https://github.com/facebook/react-native/commit/8ae1852) by [@fkgozali](https://github.com/fkgozali))
-- Support image props for Slider component, feature parity with pre-Fabric Slider ([b6318ac](https://github.com/facebook/react-native/commit/b6318ac) by [@JoshuaGross](https://github.com/JoshuaGross))
 - TM iOS: Util to check if an id is TurboModule instance ([3e9f9cf](https://github.com/facebook/react-native/commit/3e9f9cf) by [@fkgozali](https://github.com/fkgozali))
 - TM iOS: Verify that module class conforms to RCTTurboModule before instantiating ([94925d5](https://github.com/facebook/react-native/commit/94925d5) by [@fkgozali](https://github.com/fkgozali))
 - Moving ObjC specific clang-format rules to the common config ([64d6ea8](https://github.com/facebook/react-native/commit/64d6ea8) by [@shergin](https://github.com/shergin))
