@@ -1,6 +1,7 @@
 # Changelog
 
 ## [0.59]
+
 ### Added
 
 - Add QPL marker to track time it takes to load .so file from RN ([10b5218](https://github.com/facebook/react-native/commit/10b5218) by [@mdvacca](https://github.com/mdvacca))
@@ -41,11 +42,13 @@
 - [iOS][Added] - Expose isLocalUserInfoKey to keyboard event notifications ([05f35c2](https://github.com/facebook/react-native/commit/05f35c2) by [@nossbigg](https://github.com/nossbigg))
 - [ios] [added] - Allow changing the project path in react-native-xcode.sh ([9ccde37](https://github.com/facebook/react-native/commit/9ccde37) by [@janicduplessis](https://github.com/janicduplessis))
 - TM iOS: added helper to check whether a class is TurboModule compatible ([d9f34bd](https://github.com/facebook/react-native/commit/d9f34bd) by [@fkgozali](https://github.com/fkgozali))
+- **ActionSheetIOS** has a new prop `destructiveButtonIndexes` for an `Array<number>` of destructive indexes ([67e7f16](https://github.com/facebook/react-native/commit/67e7f16) by [@sdg9](https://github.com/sdg9))
 
 ### Changed
 
+- `Flow` dependency is now at `v0.92.0` ([5ee7386](https://github.com/facebook/react-native/commit/5ee7386) by [@pakoito](https://github.com/pakoito))
+- `@react-native-community/cli` dependency is at `v1.2.1` ([a252aee](https://github.com/facebook/react-native/commit/a252aee) and [5e1504b](https://github.com/facebook/react-native/commit/5e1504b) by [@grabbou](https://github.com/grabbou))
 - [GENERAL] [Changed] - React sync for revisions 6bf5e85...aa94237 (React 16.8.1) ([ccefc70](https://github.com/facebook/react-native/commit/ccefc70) by [@cpojer](https://github.com/cpojer))
-- [General] [Changed] Danger bot is now friendlier in the RN repo. ([9793b05](https://github.com/facebook/react-native/commit/9793b05) by [@cpojer](https://github.com/cpojer))
 - [General] [Changed] - Disable no-inline-styles lint rule for RNTester ([959a133](https://github.com/facebook/react-native/commit/959a133) by [@janicduplessis](https://github.com/janicduplessis))
 - Small changes to get Profile build working ([6418e30](https://github.com/facebook/react-native/commit/6418e30) by [@JoshuaGross](https://github.com/JoshuaGross))
 - Optimize pre-allocation of views ([16a6e51](https://github.com/facebook/react-native/commit/16a6e51) by [@mdvacca](https://github.com/mdvacca))
@@ -56,6 +59,7 @@
 
 #### Android specific
 
+- Clarify error message to direct people to `react-native start` rather than `react-native bundle` ([46aaa02](https://github.com/facebook/react-native/commit/46aaa02) by [@sunnylqm](https://github.com/sunnylqm))
 - [ANDROID] [BREAKING] [Networking] - removed replaceOkHttpClient method in OkHttpClientProvider. ([7cbdd7b](https://github.com/facebook/react-native/commit/7cbdd7b) by [@cdlewis](https://github.com/cdlewis))
 - [Android] [Changed] - Bump Soloader to 0.6.0 ([07d1075](https://github.com/facebook/react-native/commit/07d1075) by [@dulmandakh](https://github.com/dulmandakh))
 - [Android] [Changed] - Enable Java 8 ([38eb2a7](https://github.com/facebook/react-native/commit/38eb2a7) by [@dulmandakh](https://github.com/dulmandakh))
@@ -78,6 +82,7 @@
 - [Android] [Changed] - fix lint error/warnings ([d2fc19f](https://github.com/facebook/react-native/commit/d2fc19f) by [@dulmandakh](https://github.com/dulmandakh))
 - [Android] [Changed] - TimePickerDialogModule supports only FragmentActivity ([be361d0](https://github.com/facebook/react-native/commit/be361d0) by [@dulmandakh](https://github.com/dulmandakh))
 - [Android] [Changed] - DatePickerDialogModule supports only FragmentActivity ([c6c5a17](https://github.com/facebook/react-native/commit/c6c5a17) by [@dulmandakh](https://github.com/dulmandakh))
+- ReactActivity extends FragmentActivity (#22662) ([dda2b82](https://github.com/facebook/react-native/commit/dda2b82) by [@dulmandakh](https://github.com/dulmandakh))
 - [Android] [Changed] - Bump targetSdkVersion to 28 ([818f6bb](https://github.com/facebook/react-native/commit/818f6bb) by [@dulmandakh](https://github.com/dulmandakh))
 - [Android] [Changed] -  Android Network Security configuration. ([724d83a](https://github.com/facebook/react-native/commit/724d83a) by [@dulmandakh](https://github.com/dulmandakh))
 - [Android] [Changed] - Fix network security ([01d5a3b](https://github.com/facebook/react-native/commit/01d5a3b) by [@dulmandakh](https://github.com/dulmandakh))
@@ -115,6 +120,7 @@
 
 ### Removed
 
+- `react-native-git-upgrade` is now officially dead; use [rn-diff-purge](https://github.com/pvinis/rn-diff-purge) instead ([a6bdacb](https://github.com/facebook/react-native/commit/a6bdacb) by [@cpojer](https://github.com/cpojer))
 - Remove UIProp class from redex and proguard rules, it doesn't exist ([cf0c37b](https://github.com/facebook/react-native/commit/cf0c37b) by [@dulinriley](https://github.com/dulinriley))
 - Remove components out of Bindings ([2b35659](https://github.com/facebook/react-native/commit/2b35659) by [@mdvacca](https://github.com/mdvacca))
 - Remove unused constexpr ([52d9f26](https://github.com/facebook/react-native/commit/52d9f26) by [@davidaurelio](https://github.com/davidaurelio))
@@ -135,6 +141,8 @@
 
 ### Fixed
 
+- The `Map` and `Set` polyfills no longer reject non-extensible object keys; also fix hash collision scenario ([90850ca](https://github.com/facebook/react-native/commit/90850ca) by [@benjamn](https://github.com/benjamn))
+- Corrected StyleSheet's transformation perspective to match iOS's behavior, regardless of screen density ([4c10f93](https://github.com/facebook/react-native/commit/4c10f93) by [@syaau](https://github.com/syaau))
 - [General] [Fixed] - After using React's `<StricMode>` it was discovered that a string ref was set, which is bad practice. ([e4d7fc0](https://github.com/facebook/react-native/commit/e4d7fc0) by [@rsmelo92](https://github.com/rsmelo92))
 - fix: change template to work with jest (#23150) ([5218932](https://github.com/facebook/react-native/commit/5218932) by [@Esemesek](https://github.com/Esemesek))
 - Fix issue #21065 getInspectorDataForViewTag is not a function (#21237) ([46f3285](https://github.com/facebook/react-native/commit/46f3285) by [@TranLuongTuanAnh](https://github.com/TranLuongTuanAnh))
@@ -192,58 +200,6 @@
 
 #### iOS specific
 
-
-
-### Unknown
-
-- Delete functionality for shared childen ([f4def00](https://github.com/facebook/react-native/commit/f4def00) by [@davidaurelio](https://github.com/davidaurelio))
-- Globally disable LayoutAnimation during Snapshot Tests ([527fc9d](https://github.com/facebook/react-native/commit/527fc9d) by [@PeteTheHeat](https://github.com/PeteTheHeat))
-- Critical improvements for Map and Set polyfills. ([90850ca](https://github.com/facebook/react-native/commit/90850ca) by [@benjamn](https://github.com/benjamn))
-- Make the load-script-error less misleading (#17055) ([46aaa02](https://github.com/facebook/react-native/commit/46aaa02) by [@sunnylqm](https://github.com/sunnylqm))
-- Update hash functions to use folly::hash::hash_combine ([88bc80c](https://github.com/facebook/react-native/commit/88bc80c) by [@JoshuaGross](https://github.com/JoshuaGross))
-- Rename `YGMarkerType` to `YGMarker` ([e804124](https://github.com/facebook/react-native/commit/e804124) by [@davidaurelio](https://github.com/davidaurelio))
-- Pass layout marker data along ([fc6a4b6](https://github.com/facebook/react-native/commit/fc6a4b6) by [@davidaurelio](https://github.com/davidaurelio))
-- avoid double lookup of a nativemodule when resolving turbomodule ([1e6f534](https://github.com/facebook/react-native/commit/1e6f534) by [@fkgozali](https://github.com/fkgozali))
-- Address some paragraph measure cache follow-up nits ([10e4a85](https://github.com/facebook/react-native/commit/10e4a85) by [@JoshuaGross](https://github.com/JoshuaGross))
-- Marker for measure callbacks ([d2b2316](https://github.com/facebook/react-native/commit/d2b2316) by [@davidaurelio](https://github.com/davidaurelio))
-- Marker for baseline callbacks ([e2bd70a](https://github.com/facebook/react-native/commit/e2bd70a) by [@davidaurelio](https://github.com/davidaurelio))
-- Update xplat/js to 0.92.0 ([5ee7386](https://github.com/facebook/react-native/commit/5ee7386) by [@pakoito](https://github.com/pakoito))
-- ReactActivity extends FragmentActivity (#22662) ([dda2b82](https://github.com/facebook/react-native/commit/dda2b82) by [@dulmandakh](https://github.com/dulmandakh))
-- TM: trimming down module dependencies when getting NativeModules ([1bbb693](https://github.com/facebook/react-native/commit/1bbb693) by [@fkgozali](https://github.com/fkgozali))
-- Make `==` operator for `YGStyle` free function ([0e1d4ec](https://github.com/facebook/react-native/commit/0e1d4ec) by [@davidaurelio](https://github.com/davidaurelio))
-- Only call __turboModuleProxy when it exists ([e1451ca](https://github.com/facebook/react-native/commit/e1451ca) by [@RSNara](https://github.com/RSNara))
-- Start using getConstants ([f370933](https://github.com/facebook/react-native/commit/f370933) by [@RSNara](https://github.com/RSNara))
-- Mock Animated for testing ([45686c8](https://github.com/facebook/react-native/commit/45686c8) by [@PeteTheHeat](https://github.com/PeteTheHeat))
-- Move CoreModulesPackage to use TurboReactPackage ([aa3fc09](https://github.com/facebook/react-native/commit/aa3fc09) by [@axe-fb](https://github.com/axe-fb))
-- Initialize internals of ReadableNativeMap with the correct initial capacity ([185320d](https://github.com/facebook/react-native/commit/185320d) by [@mdvacca](https://github.com/mdvacca))
-- ImageResponseObserverCoordinator does not need to be shared_ptr ([550a14c](https://github.com/facebook/react-native/commit/550a14c) by [@JoshuaGross](https://github.com/JoshuaGross))
-- Move codegen into packages/react-native-codegen ([5ed749e](https://github.com/facebook/react-native/commit/5ed749e) by [@cpojer](https://github.com/cpojer))
-- Move `.clang-format` to repo root (#23328) ([5319cb2](https://github.com/facebook/react-native/commit/5319cb2) by [@davidaurelio](https://github.com/davidaurelio))
-- Kill react-native-git-upgrade ([a6bdacb](https://github.com/facebook/react-native/commit/a6bdacb) by [@cpojer](https://github.com/cpojer))
-- Consider SSTs in Platform.isTesting ([0bde29e](https://github.com/facebook/react-native/commit/0bde29e) by [@PeteTheHeat](https://github.com/PeteTheHeat))
-- Make REACT_CLASS public so we can use a provider ([b8246ac](https://github.com/facebook/react-native/commit/b8246ac) by [@ejanzer](https://github.com/ejanzer))
-- Stop preallocation views on the main thread ([17e1694](https://github.com/facebook/react-native/commit/17e1694) by [@mdvacca](https://github.com/mdvacca))
-- Update script to parse all specs in folder ([34763bf](https://github.com/facebook/react-native/commit/34763bf) by [@rickhanlonii](https://github.com/rickhanlonii))
-- Exclude RN templates from internal linters ([aefb059](https://github.com/facebook/react-native/commit/aefb059) by [@zertosh](https://github.com/zertosh))
-- Bring back the unit tests for the Cxx implementation ([3c74b6e](https://github.com/facebook/react-native/commit/3c74b6e) by [@fromcelticpark](https://github.com/fromcelticpark))
-- Bump CLI dependency ([a252aee](https://github.com/facebook/react-native/commit/a252aee) and [5e1504b](https://github.com/facebook/react-native/commit/5e1504b) by [@grabbou](https://github.com/grabbou))
-
-#### Android Unknown
-
-- Temporary render <View> for <AndroidTextInput> component ([5bc709d](https://github.com/facebook/react-native/commit/5bc709d) by [@mdvacca](https://github.com/mdvacca))
-- Make perspective transformation look exactly same on iOS and Android (#18302) ([4c10f93](https://github.com/facebook/react-native/commit/4c10f93) by [@syaau](https://github.com/syaau))
-- iOS: Make each module implement getTurboModuleWithJsInvoker: instead of having centralized provider ([8a50bc3](https://github.com/facebook/react-native/commit/8a50bc3) by [@fkgozali](https://github.com/fkgozali))
-
-#### iOS Unknown
-
-- update xcode version to 2.0.0 (#23051) ([988366a](https://github.com/facebook/react-native/commit/988366a) by [@ewamal](https://github.com/ewamal))
-- Feature/action sheet destructive button indexes (#18254) ([67e7f16](https://github.com/facebook/react-native/commit/67e7f16) by [@sdg9](https://github.com/sdg9))
-- Enable module lookup in TurboModules ([0ceefb4](https://github.com/facebook/react-native/commit/0ceefb4) by [@RSNara](https://github.com/RSNara))
-- TM iOS: guard against nullptr in module lookup ([8ae1852](https://github.com/facebook/react-native/commit/8ae1852) by [@fkgozali](https://github.com/fkgozali))
-- TM iOS: Util to check if an id is TurboModule instance ([3e9f9cf](https://github.com/facebook/react-native/commit/3e9f9cf) by [@fkgozali](https://github.com/fkgozali))
-- TM iOS: Verify that module class conforms to RCTTurboModule before instantiating ([94925d5](https://github.com/facebook/react-native/commit/94925d5) by [@fkgozali](https://github.com/fkgozali))
-- Moving ObjC specific clang-format rules to the common config ([64d6ea8](https://github.com/facebook/react-native/commit/64d6ea8) by [@shergin](https://github.com/shergin))
-- Don't attempt to load RCTDevLoadingView lazily ([2f33b50](https://github.com/facebook/react-native/commit/2f33b50) by [@fkgozali](https://github.com/fkgozali))
 
 ## [0.58.4]
 
