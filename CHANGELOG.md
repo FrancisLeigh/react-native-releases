@@ -27,7 +27,6 @@
 
 #### Android specific
 
-- [ANDROID] [DevSupport] add Network Security Config file to allow access to packager via cleartext requests in Android API 28 and above. (fixes #22375) ([3b0b7ce](https://github.com/facebook/react-native/commit/3b0b7ce) by [@Salakar](https://github.com/Salakar))
 - Android: Add a maxFontSizeMultiplier prop to <Text> and <TextInput> (#23069) ([4936d28](https://github.com/facebook/react-native/commit/4936d28) by [@rigdern](https://github.com/rigdern))
 - [Android] [Deprecated] - fix warinings obsolete to update to gradle 4.10.1 or high ([5be50d4](https://github.com/facebook/react-native/commit/5be50d4) by [@misaku](https://github.com/misaku))
 - Fix textTransform when used with other text styles on Android (#22670) ([3a33e75](https://github.com/facebook/react-native/commit/3a33e75) by [@janicduplessis](https://github.com/janicduplessis))
@@ -84,8 +83,6 @@
 - [Android] [Changed] - DatePickerDialogModule supports only FragmentActivity ([c6c5a17](https://github.com/facebook/react-native/commit/c6c5a17) by [@dulmandakh](https://github.com/dulmandakh))
 - ReactActivity extends FragmentActivity (#22662) ([dda2b82](https://github.com/facebook/react-native/commit/dda2b82) by [@dulmandakh](https://github.com/dulmandakh))
 - [Android] [Changed] - Bump targetSdkVersion to 28 ([818f6bb](https://github.com/facebook/react-native/commit/818f6bb) by [@dulmandakh](https://github.com/dulmandakh))
-- [Android] [Changed] -  Android Network Security configuration. ([724d83a](https://github.com/facebook/react-native/commit/724d83a) by [@dulmandakh](https://github.com/dulmandakh))
-- [Android] [Changed] - Fix network security ([01d5a3b](https://github.com/facebook/react-native/commit/01d5a3b) by [@dulmandakh](https://github.com/dulmandakh))
 - [Android] [Changed] - bump Android Plugin to 3.3.1 ([51a7ad5](https://github.com/facebook/react-native/commit/51a7ad5) by [@dulmandakh](https://github.com/dulmandakh))
 
 #### iOS specific
@@ -162,6 +159,7 @@
 
 #### Android specific
 
+- Fix issue with use of Android API 28 by adding security config for metro access ([724d83a](https://github.com/facebook/react-native/commit/724d83a), [01d5a3b](https://github.com/facebook/react-native/commit/01d5a3b), [3b0b7ce](https://github.com/facebook/react-native/commit/3b0b7ce), and [84572c4](https://github.com/facebook/react-native/commit/84572c4) by [@Salakar](https://github.com/Salakar) and [@dulmandakh](https://github.com/dulmandakh))
 - [Android] [Fixed] - Fix Inverted Horizontal ScrollView on Android ([32cb9ec](https://github.com/facebook/react-native/commit/32cb9ec) by [@dmainas](https://github.com/dmainas))
 - [Android] [Fixed] - fix casting crash in android checkbox ([58437cd](https://github.com/facebook/react-native/commit/58437cd) by [@vonovak](https://github.com/vonovak))
 - [Android] [Fixed] - Add error description to Image onError callback ([7795a67](https://github.com/facebook/react-native/commit/7795a67) by [@Jyrno42](https://github.com/Jyrno42))
@@ -188,18 +186,6 @@
 - [iOS] [Fixed] - Fixed a "'folly/folly-config.h' file not found" build error when using React via CocoaPods ([415cc25](https://github.com/facebook/react-native/commit/415cc25) by [@Salakar](https://github.com/Salakar))
 - [iOS] [Fixed] - Respect `MDN` cache strategy before cache the image. ([e98d5a2](https://github.com/facebook/react-native/commit/e98d5a2) by [@zhongwuzw](https://github.com/zhongwuzw))
 - [iOS] [Fixed] - Respect `MDN` cache strategy before cache the image. ([fb8ba3f](https://github.com/facebook/react-native/commit/fb8ba3f) by [@zhongwuzw](https://github.com/zhongwuzw))
-
-
-### Security
-
-
-
-#### Android specific
-
-- [ANDROID] [Template] add Network Security Config file to allow access to packager via cleartext requests in Android API 28 and above. (fixes #22375) ([84572c4](https://github.com/facebook/react-native/commit/84572c4) by [@Salakar](https://github.com/Salakar))
-
-#### iOS specific
-
 
 ## [0.58.4]
 
