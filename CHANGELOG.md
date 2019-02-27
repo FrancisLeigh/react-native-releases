@@ -4,44 +4,22 @@
 
 ### Added
 
-- Add QPL marker to track time it takes to load .so file from RN ([10b5218](https://github.com/facebook/react-native/commit/10b5218) by [@mdvacca](https://github.com/mdvacca))
-- Add `YGMarkerLayout` ([1db5580](https://github.com/facebook/react-native/commit/1db5580) by [@davidaurelio](https://github.com/davidaurelio))
-- Add function to set marker callbacks ([43601f1](https://github.com/facebook/react-native/commit/43601f1) by [@davidaurelio](https://github.com/davidaurelio))
-- Add `MarkerSection` ([f1a3137](https://github.com/facebook/react-native/commit/f1a3137) by [@davidaurelio](https://github.com/davidaurelio))
-- Introduce first marker ([c723029](https://github.com/facebook/react-native/commit/c723029) by [@davidaurelio](https://github.com/davidaurelio))
-- Layout marker metadata ([0dafa0d](https://github.com/facebook/react-native/commit/0dafa0d) by [@davidaurelio](https://github.com/davidaurelio))
-- count cache hits ([f506019](https://github.com/facebook/react-native/commit/f506019) by [@davidaurelio](https://github.com/davidaurelio))
-- Track how much measure cache entries are used ([c16fadb](https://github.com/facebook/react-native/commit/c16fadb) by [@davidaurelio](https://github.com/davidaurelio))
-- Adds fixes for react-native-windows UWP (#848) ([dfcbf97](https://github.com/facebook/react-native/commit/dfcbf97) by [@rozele](https://github.com/rozele))
-- Add QPL marker to track time it takes to load .so file from RN ([8110909](https://github.com/facebook/react-native/commit/8110909) by [@mdvacca](https://github.com/mdvacca))
-- User-defined literals for `YGValue` ([5184f0d](https://github.com/facebook/react-native/commit/5184f0d) by [@davidaurelio](https://github.com/davidaurelio))
-- Apply the fix for CJK languages on single-line text fields. (#22546) ([05ebf77](https://github.com/facebook/react-native/commit/05ebf77) by [@mandrigin](https://github.com/mandrigin))
-- [General] [Added] - Added new `warnOnce` function for printing a message to the developer console once per session ([9a7fff9](https://github.com/facebook/react-native/commit/9a7fff9) by [@empyrical](https://github.com/empyrical))
-- Add jest test to ensure consistency between AnimatedMock and AnimatedImplementation ([8a5614b](https://github.com/facebook/react-native/commit/8a5614b) by [@PeteTheHeat](https://github.com/PeteTheHeat))
-- make xplat lints explicit ([af41a53](https://github.com/facebook/react-native/commit/af41a53) by [@dsainati1](https://github.com/dsainati1))
-- add prettier check in ci (#23382) ([392e896](https://github.com/facebook/react-native/commit/392e896) by [@gengjiawen](https://github.com/gengjiawen))
-- Add a Metro configuration with inline require/import ([ae11993](https://github.com/facebook/react-native/commit/ae11993) by [@cpojer](https://github.com/cpojer))
-- Add more init perf markers ([864a301](https://github.com/facebook/react-native/commit/864a301) by [@sahrens](https://github.com/sahrens))
-- Add Platform module for web target (#23387) ([daa79b0](https://github.com/facebook/react-native/commit/daa79b0) by [@EvanBacon](https://github.com/EvanBacon))
-- [GENERAL] [ENHANCEMENT] [ViewPropTypes.js] - Enhance Flow types definitions ([7ff9456](https://github.com/facebook/react-native/commit/7ff9456) by [@danibonilha](https://github.com/danibonilha))
+- Add a Metro configuration to the template with inline require/import options ([ae11993](https://github.com/facebook/react-native/commit/ae11993) by [@cpojer](https://github.com/cpojer))
+- Add Platform module for "web" target; this is now a valid third option for `Platform.OS` ([daa79b0](https://github.com/facebook/react-native/commit/daa79b0) by [@EvanBacon](https://github.com/EvanBacon))
+- Enhance Flow types definitions for **ViewPropTypes** ([7ff9456](https://github.com/facebook/react-native/commit/7ff9456) by [@danibonilha](https://github.com/danibonilha))
 
 #### Android specific
 
-- Android: Add a maxFontSizeMultiplier prop to <Text> and <TextInput> (#23069) ([4936d28](https://github.com/facebook/react-native/commit/4936d28) by [@rigdern](https://github.com/rigdern))
-- [Android] [Deprecated] - fix warinings obsolete to update to gradle 4.10.1 or high ([5be50d4](https://github.com/facebook/react-native/commit/5be50d4) by [@misaku](https://github.com/misaku))
-- Fix textTransform when used with other text styles on Android (#22670) ([3a33e75](https://github.com/facebook/react-native/commit/3a33e75) by [@janicduplessis](https://github.com/janicduplessis))
-- [ANDROID][ENHANCEMENT] - Can show videos and photos from CameraRoll in the same time ([54534e7](https://github.com/facebook/react-native/commit/54534e7) by [@kesha-antonov](https://github.com/kesha-antonov))
-- Add support for intent:// URIs ([52bdf34](https://github.com/facebook/react-native/commit/52bdf34))
-- Disable OverlappingRendering for ReactTextView ([f83281e](https://github.com/facebook/react-native/commit/f83281e) by [@mdvacca](https://github.com/mdvacca))
-- Add autoComplete prop (#21575) ([179d490](https://github.com/facebook/react-native/commit/179d490))
+- **Text** and **TextInput** now has prop [maxFontSizeMultiplier](https://facebook.github.io/react-native/docs/text#maxfontsizemultiplier) ([4936d28](https://github.com/facebook/react-native/commit/4936d28) by [@rigdern](https://github.com/rigdern))
+- **CameraRoll**'s `getPhotos` now supports `assetType: "All"` to let users pick from video and photos simultaneously ([54534e7](https://github.com/facebook/react-native/commit/54534e7) by [@kesha-antonov](https://github.com/kesha-antonov))
+- **TextInput** now has prop [autoComplete](https://facebook.github.io/react-native/docs/textinput#autocomplete) prop ([179d490](https://github.com/facebook/react-native/commit/179d490))
 
 #### iOS specific
 
-- [IOS] [ENHANCEMENT] [TextInput] - Add `rejectResponderTermination` prop to to TextInput. This enables TextInputs inside Swipeables to function properly. ([11df0ea](https://github.com/facebook/react-native/commit/11df0ea) by [@cmcewen](https://github.com/cmcewen))
-- [iOS][Added] - Expose isLocalUserInfoKey to keyboard event notifications ([05f35c2](https://github.com/facebook/react-native/commit/05f35c2) by [@nossbigg](https://github.com/nossbigg))
-- [ios] [added] - Allow changing the project path in react-native-xcode.sh ([9ccde37](https://github.com/facebook/react-native/commit/9ccde37) by [@janicduplessis](https://github.com/janicduplessis))
-- TM iOS: added helper to check whether a class is TurboModule compatible ([d9f34bd](https://github.com/facebook/react-native/commit/d9f34bd) by [@fkgozali](https://github.com/fkgozali))
+- **TextInput** now has prop `rejectResponderTermination` to enables TextInputs inside Swipeables to function properly ([11df0ea](https://github.com/facebook/react-native/commit/11df0ea) by [@cmcewen](https://github.com/cmcewen))
 - **ActionSheetIOS** has a new prop `destructiveButtonIndexes` for an `Array<number>` of destructive indexes ([67e7f16](https://github.com/facebook/react-native/commit/67e7f16) by [@sdg9](https://github.com/sdg9))
+- Add `isEventFromThisApp` to `KeyboardEvent` notifications to disambiguate keyboard events when apps are running side-by-side ([05f35c2](https://github.com/facebook/react-native/commit/05f35c2) by [@nossbigg](https://github.com/nossbigg))
+- Allow changing the project path in `react-native-xcode.sh` using env var `PROJECT_ROOT` ([9ccde37](https://github.com/facebook/react-native/commit/9ccde37) by [@janicduplessis](https://github.com/janicduplessis))
 
 ### Changed
 
@@ -109,7 +87,7 @@
 
 #### Android specific
 
-
+- [Android] [Deprecated] - fix warinings obsolete to update to gradle 4.10.1 or high ([5be50d4](https://github.com/facebook/react-native/commit/5be50d4) by [@misaku](https://github.com/misaku))
 
 #### iOS specific
 
@@ -138,6 +116,7 @@
 
 ### Fixed
 
+- Adds fixes for react-native-windows UWP ([dfcbf97](https://github.com/facebook/react-native/commit/dfcbf97) by [@rozele](https://github.com/rozele))
 - The `Map` and `Set` polyfills no longer reject non-extensible object keys; also fix hash collision scenario ([90850ca](https://github.com/facebook/react-native/commit/90850ca) by [@benjamn](https://github.com/benjamn))
 - Corrected StyleSheet's transformation perspective to match iOS's behavior, regardless of screen density ([4c10f93](https://github.com/facebook/react-native/commit/4c10f93) by [@syaau](https://github.com/syaau))
 - [General] [Fixed] - After using React's `<StricMode>` it was discovered that a string ref was set, which is bad practice. ([e4d7fc0](https://github.com/facebook/react-native/commit/e4d7fc0) by [@rsmelo92](https://github.com/rsmelo92))
@@ -156,6 +135,7 @@
 - [General] [Fixed] - `JSBigString.h`: Removed accidental double include of header `unistd.h` ([cae6bef](https://github.com/facebook/react-native/commit/cae6bef) by [@empyrical](https://github.com/empyrical))
 - [General] [Fixed] - Same style was applied twice to SwipeableQuickActionButton in a recent commit causing problems with the buttons layout. ([ad52f52](https://github.com/facebook/react-native/commit/ad52f52) by [@varungupta85](https://github.com/varungupta85))
 - [General] [Fixed] - Tweaked `jsi.h` to build on MSVC ([78be6ef](https://github.com/facebook/react-native/commit/78be6ef) by [@empyrical](https://github.com/empyrical))
+- Fix textTransform when used with other text styles on Android (#22670) ([3a33e75](https://github.com/facebook/react-native/commit/3a33e75) by [@janicduplessis](https://github.com/janicduplessis))
 
 #### Android specific
 
@@ -165,9 +145,11 @@
 - [Android] [Fixed] - Add error description to Image onError callback ([7795a67](https://github.com/facebook/react-native/commit/7795a67) by [@Jyrno42](https://github.com/Jyrno42))
 - [Android] [Fixed] - Fixes Android crash on animated style with string rotation ([e405e84](https://github.com/facebook/react-native/commit/e405e84) by [@scisci](https://github.com/scisci))
 - [Android] [Fixed] Rename dev settings menu preferences file with a RN prefix. ([9968d0c](https://github.com/facebook/react-native/commit/9968d0c) by [@khaled-cliqz](https://github.com/khaled-cliqz))
+- Fix exception occurring while fading a **TextView** ([f83281e](https://github.com/facebook/react-native/commit/f83281e) by [@mdvacca](https://github.com/mdvacca))
 
 #### iOS specific
 
+- Fix **TextView**'s `setAttrbutedText` for CJK languages on single-line text fields ([05ebf77](https://github.com/facebook/react-native/commit/05ebf77) by [@mandrigin](https://github.com/mandrigin))
 - [IOS] [BUGFIX] [AsyncStorage] - Correctly remove keys of large values from AsyncStorage. ([27b4d21](https://github.com/facebook/react-native/commit/27b4d21) by [@esprehn](https://github.com/esprehn))
 - [iOS] [Fixed] - Fix SectionList layout of RNTester on iOS ([25f7b0e](https://github.com/facebook/react-native/commit/25f7b0e) by [@zhongwuzw](https://github.com/zhongwuzw))
 - [iOS] [Fixed] - Fix small typo in comments of reactDecodedImageBytes ([dd8f5de](https://github.com/facebook/react-native/commit/dd8f5de) by [@zhongwuzw](https://github.com/zhongwuzw))
